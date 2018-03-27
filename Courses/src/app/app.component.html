@@ -1,0 +1,19 @@
+<nav class="navbar navbar-light custom-nav">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link " href="#">Course</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-active" href="#">Topics</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Course Application</h1> 
+      <p>It is course application with topics</p> 
+    </div>
+  </div>
+  <app-topic *ngIf="topicService.isList"></app-topic>
+  <app-addtopic *ngIf="!topicService.isList"></app-addtopic>

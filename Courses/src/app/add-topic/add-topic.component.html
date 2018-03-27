@@ -1,0 +1,16 @@
+
+<form class="topic">
+  <div class="form-group">
+    <label>Topic Id</label>
+    <input type="text"  [(ngModel)]="id" name="id" class="form-control" placeholder="Topic Id">
+  </div>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text"  [(ngModel)]="topicName" name="topicName" class="form-control"  placeholder="Topic Name">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input type="text"  [(ngModel)]="description" name="description" class="form-control"  placeholder="Topic Description">
+  </div>
+  <button type="submit" class="btn btn-primary" (click) ="saveTopic()">Add Topic</button>
+</form>

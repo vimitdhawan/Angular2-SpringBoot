@@ -1,0 +1,19 @@
+<div class="topic-list">
+<input class="btn btn-primary  new-topic" type="button" (click) = "addNewTopic()"value="Add New Topic">
+<table class="table table-bordered" *ngIf="topics.length">
+  <thead>
+    <tr>
+      <th scope="col">Topic Id</th>
+      <th scope="col">Topic Name</th>
+      <th scope="col">Topic Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let topic of topics">
+      <td>{{topic.id}}</td>
+      <td>{{topic.name}}</td>
+      <td>{{topic.description}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
